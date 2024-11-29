@@ -7,6 +7,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::view('projecten', 'projecten')->name('projecten');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
