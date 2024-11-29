@@ -1,0 +1,1 @@
+<img class="honeycomb-cell__image">
