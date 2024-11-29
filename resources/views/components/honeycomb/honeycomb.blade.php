@@ -104,7 +104,7 @@
         </a>
     </x-honeycomb.honeycomb_cell>
     <x-honeycomb.honeycomb_cell>
-        <a href="#">
+        <a href="{{ url('http://portfolio.test') }}">
             <img class="honeycomb-cell__image" src="images/projects/Jeffrey-logo-project-laravel.png" alt="">
             <x-honeycomb.honeycomb_cell_title>
                 Portfolio Laravel Editie <small>Versie 1.1</small>

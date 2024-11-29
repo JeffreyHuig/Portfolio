@@ -19,6 +19,15 @@
                     <x-nav-link :href="route('projecten')" :active="request()->routeIs('projecten')">
                         {{ __('Projecten') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('curriculum-vitae')" :active="request()->routeIs('curriculum-vitae')">
+                        {{ __('Curriculum Vitae') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')">
+                        {{ __('Contact') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('copyright')" :active="request()->routeIs('copyright')">
+                        {{ __('Copyright') }}
+                    </x-nav-link>
                 </div>
             </div>
 

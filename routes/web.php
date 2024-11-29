@@ -9,6 +9,9 @@ Route::get('/', function () {
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('projecten', 'projecten')->name('projecten');
+    Route::view('curriculum-vitae', 'curriculum-vitae')->name('curriculum-vitae');
+    Route::view('contact', 'contact')->name('contact');
+    Route::view('copyright', 'copyright')->name('copyright');
 });
 
 Route::get('/dashboard', function () {
