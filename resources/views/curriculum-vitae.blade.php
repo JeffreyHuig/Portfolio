@@ -62,146 +62,155 @@
                 <p class="font-bold text-blue-900">
                     Opleidingen
                 </p>
-                <p>
-                    <span>
-                        2019 - 2022
-                    </span>
-                    <span class="ml-8">
-                        <b>Applicatie- en Media-ontwikkelaar / Software Developer</b>
-                    </span>
-                    <span class="ml-[120px]">
-                        MBO-4, VONK in Schagen
-                    </span><br>
-                    <span class="ml-[120px]">
-                        Diploma behaald.
-                    </span>
-                </p>
-                <p>
-                    <span>
-                        2012 - 2019
-                    </span>
-                    <span class="ml-8">
-                        <b>HAVO</b>
-                    </span>
-                </p>
+                <table class="table-auto w-full">
+                    <tbody>
+                        <tr>
+                            <td>2019 - 2022</td>
+                            <td class="font-bold">Applicatie- en Media-ontwikkelaar / Software Developer</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>MBO-4, VONK in Schagen</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Diploma behaald.</td>
+                        </tr>
+                        <tr>
+                            <td>2012 - 2019</td>
+                            <td class="font-bold">HAVO</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="my-3">
                 <p class="font-bold text-blue-900">
                     Werkervaring
                 </p>
-                <div>
-                    <p class="mt-4 mb-8">
-                        <span>
-                            Jun 2023 - Heden
-                        </span>
-                        <span class="ml-8">
-                            <b>Vrijwilliger Administratief-Medewerker</b>
-                        </span><br>
-                        <span class="ml-40">
-                            Stichting Present en het Boelhuys 
-                        </span><br>
-                        <span class="ml-40">
-                            Den Helder, 24 uur per week.
-                        </span><br>
-                        <span>
-                            {{-- <b>Taken:</b> --}}
-                            Taken:
-                        </span>
-                        <span class="ml-[113px]">
-                            Werken aan (eigen) projecten, 
-                        </span><br>
-                        <span class="ml-40">
-                            assisteren met werk voor kringloopwinkel,
-                        </span><br>
-                        <span class="ml-40">
-                            andere klusjes.
-                        </span>
-                    </p>
-                    <p class="mb-8">
-                        <span>
-                            Jan 2022 - Jul 2022
-                        </span>
-                        <span class="ml-[20px]">
-                            <b>Stagiair-Developer</b>
-                        </span><br>
-                        <span class="ml-[158px]">
-                            Gudz FightGear en Kantoor260
-                        </span><br>
-                        <span class="ml-[158px]">
-                            Heerhugowaard, 32 uur per week.
-                        </span><br>
-                        <span>
-                            {{-- <b>Taken:</b> --}}
-                            Taken:
-                        </span>
-                        <span class="ml-[111px]">
-                            Webtools ontwikkelen voor klanten,
-                        </span><br>
-                        <span class="ml-[158px]">
-                            inventariseren van voorraad,
-                        </span><br>
-                        <span class="ml-[158px]">
-                            ontwikkelen van een voorraadlijst,
-                        </span><br>
-                        <span class="ml-[158px]">
-                            bestellingen inpakken en verzenden.
-                        </span>
-                    </p>
-                    <p class="mb-8">
-                        <span>
-                            Sep 2020 - Jan 2021
-                        </span>
-                        <span class="ml-3">
-                            <b>Stagiair-Developer</b>
-                        </span><br>
-                        <span class="ml-[158px]">
-                            Blub Media (Reclamebureau)
-                        </span><br>
-                        <span class="ml-[158px]">
-                            Heerhugowaard, 32 uur per week.
-                        </span><br>
-                        <span>
-                            {{-- <b>Taken:</b> --}}
-                            Taken:
-                        </span>
-                        <span class="ml-[111px]">
-                            Webtools ontwikkelen voor klanten, 
-                        </span><br>
-                        <span class="ml-[158px]">
-                            bijvoorbeeld CostCalculator.
-                        </span><br>
-                        <span class="ml-[158px]">
-                            Bijgedragen aan vernieuwing 
-                        </span><br>
-                        <span class="ml-[158px]">
-                            van de werkomgeving.
-                        </span>
-                    </p>
-                    <p>
-                        <span>
-                            2016
-                        </span>
-                        <span class="ml-[120px]">
-                            <b>Stage Algemeen Medewerker</b>
-                        </span><br>
-                        <span class="ml-[158px]">
-                            Vogelasiel De Paddenstoel
-                        </span><br>
-                        <span class="ml-[158px]">
-                            Den Helder
-                        </span><br>
-                        <span>
-                            {{-- <b>Taken:</b>  --}}
-                            Taken:
-                        </span>
-                        <span class="ml-[111px]">
-                            Verblijven schoonmaken,
-                        </span><br>
-                        <span class="ml-[158px]">
-                            helpen met dieren vangen.
-                        </span>
-                    </p>
-                </div>
+                <table class="table-auto w-full">
+                    <tbody>
+                        <tr>
+                            <td>Nov 2024 - Heden</td>
+                            <td class="font-bold">Stagiair Developer</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>BitPuma</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Den Helder, 2 keer 7.5 uur per week</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Uiteindelijk 3-4 keer 7.5 uur per week.</td>
+                        </tr>
+                        <tr>
+                            <td>Taken:</td>
+                            <td>Werken aan tickets die aan mij zijn gekoppeld.</td>
+                        </tr>
+                        <tr>
+                            <td>Jun 2023 - Heden</td>
+                            <td class="font-bold">Vrijwilliger Administratief-Medewerker</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Stichting Present en het Boelhuys</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Den Helder, 24 uur per week.</td>
+                        </tr>
+                        <tr>
+                            <td>Taken:</td>
+                            <td>Werken aan (eigen) projecten,</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>assisteren met werk voor kringloopwinkel,</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>lid van flexgroep.</td>
+                        </tr>
+                        <tr>
+                            <td>Jan 2022 - Jul 2022</td>
+                            <td class="font-bold">Stagiair-Developer</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Gudz FightGear en Kantoor260</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Heerhugowaard, 32 uur per week.</td>
+                        </tr>
+                        <tr>
+                            <td>Taken:</td>
+                            <td>Webtools ontwikkelen voor klanten,</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>inventariseren van voorraad,</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ontwikkelen van een voorraadlijst,</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>bestellingen inpakken en verzenden.</td>
+                        </tr>
+                        <tr>
+                            <td>Sep 2020 - Jan 2021</td>
+                            <td class="font-bold">Stagiair-Developer</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Blub Media (Reclamebureau)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Heerhugowaard, 32 uur per week.</td>
+                        </tr>
+                        <tr>
+                            <td>Taken:</td>
+                            <td>Webtools ontwikkelen voor klanten,</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>bijvoorbeeld CostCalculator.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Bijgedragen aan vernieuwing</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>van de werkomgeving.</td>
+                        </tr>
+                        <tr>
+                            <td>2016</td>
+                            <td class="font-bold">Stage Algemeen Medewerker</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Vogelasiel De Paddenstoel</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Den Helder</td>
+                        </tr>
+                        <tr>
+                            <td>Taken:</td>
+                            <td>Verblijven schoonmaken,</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>helpen met dieren vangen.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="my-5">
                 <p class="font-bold text-blue-900">
@@ -211,7 +220,7 @@
                     Computervaardigheden
                 </p>
                 <table class="table-fixed w-3/5 my-1">
-                    <thead>
+                    <thead class="text-left">
                         <tr>
                             <th>Programmeertaal</th>
                             <th>Niveau</th>
@@ -239,6 +248,10 @@
                             <td>Voldoende</td>
                         </tr>
                         <tr>
+                            <td>PHP</td>
+                            <td>Voldoende</td>
+                        </tr>
+                        <tr>
                             <td>Kotlin</td>
                             <td>Voldoende</td>
                         </tr>
@@ -247,15 +260,15 @@
                             <td>Gemiddeld</td>
                         </tr>
                         <tr>
+                            <td>Vue</td>
+                            <td>Gemiddeld</td>
+                        </tr>
+                        <tr>
                             <td>Java</td>
                             <td>Gemiddeld</td>
                         </tr>
                         <tr>
                             <td>Javascript</td>
-                            <td>Gemiddeld</td>
-                        </tr>
-                        <tr>
-                            <td>PHP</td>
                             <td>Gemiddeld</td>
                         </tr>
                         <tr>
