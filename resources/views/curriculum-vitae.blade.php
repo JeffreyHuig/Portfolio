@@ -8,7 +8,7 @@
     <div class="flex-col border-2 border-gray-900/10 rounded-lg bg-white py-4 px-6 w-3/5 flex mb-8 mt-4 mx-auto">
         <div class="w-full">
             <div class="text-center mb-3">
-                <p class="font-[475] text-blue-900 text-lg">
+                <p class="font-bold text-blue-900 text-3xl">
                     Curriculum Vitae
                 </p>
             </div>
