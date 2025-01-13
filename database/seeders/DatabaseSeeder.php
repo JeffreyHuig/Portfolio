@@ -2,9 +2,13 @@
 
 namespace Database\Seeders;
 
+use App\Models\Developer;
+use App\Models\Genre;
+use App\Models\Mode;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use PhpParser\Node\Expr\AssignOp\Mod;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,7 +18,12 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $this->call([
-            UserSeeder::class
+            UserSeeder::class,
+            DeveloperSeeder::class,
+            GenreSeeder::class,
+            ModeSeeder::class,
+            PlatformSeeder::class,
+            GameSeeder::class,
         ]);   
     }
 }

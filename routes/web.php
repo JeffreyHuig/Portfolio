@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GameController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -8,6 +9,10 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth', 'verified'])->group(function () {
+    Route::controller(GameController::class)->group(function () {
+        Route::get('games', 'index')->name('games.index');
+        Route::get('games/{game}', 'show')->name('games.show');
+    });
     Route::view('projecten', 'projecten')->name('projecten');
     Route::view('curriculum-vitae', 'curriculum-vitae')->name('curriculum-vitae');
     Route::view('contact', 'contact')->name('contact');
