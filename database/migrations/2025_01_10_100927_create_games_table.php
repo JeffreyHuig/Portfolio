@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->date('release_date');
+            $table->string('description')->nullable();
+            $table->string('game_link')->nullable();
             $table->timestamps();
         });
 
