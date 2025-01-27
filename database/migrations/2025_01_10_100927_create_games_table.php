@@ -20,25 +20,25 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        Schema::create('developer_game', function (Blueprint $table) {
+        Schema::create('game_developer', function (Blueprint $table) {
             $table->id();
             $table->foreignId('game_id')->constrained()->onDelete('cascade');
             $table->foreignId('developer_id')->constrained()->onDelete('cascade');
         });
 
-        Schema::create('genre_game', function (Blueprint $table) {
+        Schema::create('game_genre', function (Blueprint $table) {
             $table->id();
             $table->foreignId('game_id')->constrained()->onDelete('cascade');
             $table->foreignId('genre_id')->constrained()->onDelete('cascade');
         });
 
-        Schema::create('mode_game', function (Blueprint $table) {
+        Schema::create('game_mode', function (Blueprint $table) {
             $table->id();
             $table->foreignId('game_id')->constrained()->onDelete('cascade');
             $table->foreignId('mode_id')->constrained()->onDelete('cascade');
         });
 
-        Schema::create('platform_game', function (Blueprint $table) {
+        Schema::create('game_platform', function (Blueprint $table) {
             $table->id();
             $table->foreignId('game_id')->constrained()->onDelete('cascade');
             $table->foreignId('platform_id')->constrained()->onDelete('cascade');
@@ -50,10 +50,10 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('platform_game');
-        Schema::dropIfExists('mode_game');
-        Schema::dropIfExists('genre_game');
-        Schema::dropIfExists('developer_game');
+        Schema::dropIfExists('game_platform');
+        Schema::dropIfExists('game_mode');
+        Schema::dropIfExists('game_genre');
+        Schema::dropIfExists('game_developer');
         Schema::dropIfExists('games');
     }
 };

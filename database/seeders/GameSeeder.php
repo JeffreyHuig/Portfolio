@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Game;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -136,6 +137,41 @@ class GameSeeder extends Seeder
             ],
         ];
 
+        DB::statement('PRAGMA foreign_keys = OFF;'); // Disable foreign key checks for SQLite
+        foreach ($games as $gameData) {
+            try {
+                // Create the game record
+                $game = Game::create([
+                    'name' => $gameData['name'],
+                    'release_date' => $gameData['release_date'],
+                    'description' => $gameData['description'],
+                    'game_link' => $gameData['game_link'],
+                ]);
+
+                // Attach related data
+                if (!empty($gameData['developers'])) {
+                    $game->developers()->attach($gameData['developers']);
+                }
+
+                if (!empty($gameData['genres'])) {
+                    $game->genres()->attach($gameData['genres']);
+                }
+
+                if (!empty($gameData['modes'])) {
+                    $game->modes()->attach($gameData['modes']);
+                }
+
+                if (!empty($gameData['platforms'])) {
+                    $game->platforms()->attach($gameData['platforms']);
+                }
+
+                echo "Seeded game and relations for: {$game->name}\n";
+            } catch (\Exception $e) {
+                // Debugging error
+                echo "Error seeding game: {$gameData['name']} - " . $e->getMessage() . "\n";
+            }
+        }
+        
         foreach ($games as $game) {
             $gameId = DB::table('games')->insertGetId([
                 'name' => $game['name'],
@@ -145,32 +181,33 @@ class GameSeeder extends Seeder
             ]);
 
             foreach ($game['developers'] as $developerId) {
-                DB::table('developer_game')->insert([
+                DB::table('game_developer')->insert([
                     'game_id' => $gameId,
                     'developer_id' => $developerId,
                 ]);
             }
 
             foreach ($game['genres'] as $genreId) {
-                DB::table('genre_game')->insert([
+                DB::table('game_genre')->insert([
                     'game_id' => $gameId,
                     'genre_id' => $genreId,
                 ]);
             }
 
             foreach ($game['modes'] as $modeId) {
-                DB::table('mode_game')->insert([
+                DB::table('game_mode')->insert([
                     'game_id' => $gameId,
                     'mode_id' => $modeId,
                 ]);
             }
 
             foreach ($game['platforms'] as $platformId) {
-                DB::table('platform_game')->insert([
+                DB::table('game_platform')->insert([
                     'game_id' => $gameId,
                     'platform_id' => $platformId,
                 ]);
             }
         }
+        DB::statement('PRAGMA foreign_keys = ON;'); // Re-enable foreign key checks for SQLite
     }
 }
