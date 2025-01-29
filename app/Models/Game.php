@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Casts\AsCollection;
 use Illuminate\Database\Eloquent\Casts\AsStringable;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Facades\DB;
 
@@ -17,22 +18,22 @@ class Game extends Model
      */
     protected $fillable = ['name', 'release_date', 'description', 'game_link'];
 
-    public function developers()
+    public function developers(): BelongsToMany
     {
         return $this->belongsToMany(Developer::class, 'game_developer', 'game_id', 'developer_id');
     }
 
-    public function genres()
+    public function genres(): BelongsToMany
     {
         return $this->belongsToMany(Genre::class, 'game_genre', 'game_id', 'genre_id');
     }
 
-    public function modes()
+    public function modes(): BelongsToMany
     {
         return $this->belongsToMany(Mode::class, 'game_mode', 'game_id', 'mode_id');
     }
 
-    public function platforms()
+    public function platforms(): BelongsToMany
     {
         return $this->belongsToMany(Platform::class, 'game_platform', 'game_id', 'platform_id');
     }
